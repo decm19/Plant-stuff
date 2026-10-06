@@ -17,7 +17,6 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #F2F0CC;
     padding: 20px 18px; /*size of the header*/
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -48,7 +47,6 @@ body {
 .nav-right {
     margin-left: auto;
     display: flex;
-    gap: 20px;
 }
 
 .nav-btn:hover {
@@ -105,7 +103,7 @@ body {
     background-color: white;
 }
 
-/*Profile icon */
+/*4. Profile icon */
 .profile-btn {
     width: 46px;
     height: 46px;
@@ -113,7 +111,6 @@ body {
     border-radius: 50%;
     background-color: #209726;
     color: white;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,19 +127,43 @@ body {
     background-color: #17701b;
 }
 
+/* Hamburger (hidden on desktop) */
+.menu-toggle,
+.hamburger {
+    display: none;
+}
 
-/*Page layout*/
+
+/*  5. Page layout  */
 .layout {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1.5rem;
-    max-width: 1100px;
-    margin: 1.5rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;                
+    margin: 1.5rem 0;
+}
+
+.layout::after {
+    content: "";
+    display: block;
+    clear: both;                     
+}
+
+.layout main {
+    float: left;
+    width: 66%;                     
+}
+
+aside {
+    float: right;                   
+    width: 30%;                     
+    background: #fff8dc;
+    border: 2px solid #d9a521;       
+    border-left-width: 6px;          
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
 }
 
 main section {
-    background: #fff;
+    background: #F2F0CC;
     padding: 1.2rem 1.5rem;
     margin-bottom: 1.2rem;
     border-radius: 6px;
@@ -150,8 +171,9 @@ main section {
 }
 
 
-/*  Text, lists, links */
+/*  6. Text, lists, links  */
 h1 {
+    font: 700 2.2rem/1.3 "Montserrat", sans-serif;
     color: #17701b;
     margin-bottom: 0.6rem;
     border-bottom: 2px solid #cfe3c8;
@@ -195,7 +217,7 @@ a {
 }
 
 
-/*  Figures  */
+/*  7. Figures  */
 figure {
     margin: 1rem 0;
     text-align: center;
@@ -204,7 +226,7 @@ figure {
 figure img {
     max-width: 100%;
     height: auto;
-    max-height: 280px;
+    max-height: 300px;
     border-radius: 6px;
     border: 1px solid #cfe3c8;
 }
@@ -217,15 +239,6 @@ figcaption {
 }
 
 
-/*  Aside */
-aside {
-    background: #fff8dc;
-    border-left: 5px solid #d9a521;
-    padding: 1rem;
-    border-radius: 6px;
-    align-self: start;
-    font-size: 0.95rem;
-}
 
 aside h2 {
     font-size: 1.1rem;
@@ -257,16 +270,39 @@ aside h2 {
 }
 
 
-/* Family card (Families page)  */
+/* 9. Family card (Families page) */
 .family-card {
     display: grid;
     grid-template-columns: 1fr 260px;
-    gap: 1rem;
+    gap: 1.0rem;
     align-items: start;
 }
 
+/*  Family buttons  */
+.family-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
 
-/*  Footer*/
+.family-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #209726;
+    color: white;
+    padding: 6px 18px;
+    font-weight: 600;
+    border-radius: 9px;
+    transition: background-color 0.3s ease;
+}
+
+.family-btn:hover {
+    background-color: #17701b;
+}
+
+
+/*  10. Footer  */
 footer {
     text-align: center;
     padding: 1.2rem;
@@ -274,4 +310,199 @@ footer {
     color: #1f2d1f;
     font-size: 0.9rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*  12. Cards (Genera and Species pages)  */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background: #f8fbf6;
+    border: 1px solid #cfe3c8;
+    border-radius: 6px;
+    padding: 2rem;
+	display: flex;               
+    flex-direction: column;
+}
+
+.card .family-buttons {
+    margin-top: auto;            
+    padding-top: 0.6rem;         
+}
+
+.card h3, .card h4 {
+    color: #17701b;
+    margin: 0 0 0.2rem;
+    font-size: 1rem;
+}
+
+.card .meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.4rem;
+}
+
+.card p {
+    font-size: 0.92rem;
+    margin-bottom: 0.4rem;
+}
+
+.card figure {
+    margin: 0 0 0.6rem;
+}
+
+.card figure img {
+    max-height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 800px) {
+       .family-card {
+        grid-template-columns: 1fr;
+    }
+
+    .layout main,
+    aside {
+        float: none;                 
+        width: 100%;
+    }
+
+    aside {
+        margin-top: 1.2rem;
+    }
+
+    /*  Navbar layout: logo | profile | hamburger, menu below  */
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .navbar > .logo { order: 1; }
+    .nav-right      { order: 2; margin-left: auto; }
+    .hamburger      { order: 3; }
+
+    /*  Hamburger icon */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 46px;
+        height: 46px;
+        padding: 0 11px;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .hamburger:hover {
+        background-color: white;
+    }
+    .hamburger span {
+        display: block;
+        height: 3px;
+        background: #1f2d1f;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* The checkbox stays in the page (so the keyboard can use it) but is invisible */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+    }
+
+
+
+    /* Menu: hidden until the hamburger is pressed */
+    .nav-center {
+        order: 4;
+        flex-basis: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+    }
+    .menu-toggle:checked ~ .nav-center {
+        display: flex;
+    }
+
+    .nav-center .nav-btn {
+        display: block;
+        font-size: 110%;
+        padding: 10px 14px;
+    }
+
+    /* Explorer submenu: always expanded inside the hamburger (no hover on touch screens) */
+    .nav-center .dropdown-menu {
+        display: block;
+        position: static;
+        min-width: 0;
+        background: transparent;
+        box-shadow: none;
+        padding: 0 0 0 18px;
+    }
+    .nav-center .dropdown-menu a {
+        font-size: 100%;
+    }
+}
+
+/* Small phone */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 12px;
+    }
+    .nav-center .nav-btn {
+        font-size: 100%;
+    }
+}
+
+/*  Table  */
+.table-wrap {
+    overflow-x: auto;                
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: left;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 0.4rem;
+}
+
+th, td {
+    border: 1px solid #cfe3c8;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead th {
+    background-color: #209726;
+    color: white;
+}
+
+tbody th {
+    background-color: #F2F0CC;
+}
+
+td {
+    font-style: italic;              
 }
