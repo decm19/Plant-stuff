@@ -528,3 +528,87 @@ tbody th {
 td {
     font-style: italic;              
 }
+
+/*form*/
+.form-main {                          
+    max-width: 640px;                 
+    margin: 1.5rem auto;                            
+}
+
+.form-personal {
+    margin-bottom: 1.5rem;            
+}
+
+
+.form-main label {                   
+    display: block;                   
+    margin-bottom: 0.3rem;           
+    font-weight: 600;                 
+    font-size: 0.95rem;              
+}
+
+.form-main input[type="text"],        
+.form-main input[type="email"],       
+.form-main input[type="tel"],         
+.form-main select {                   
+    display: block;                   
+    width: 100%;                      
+    padding: 0.65rem 0.8rem;          
+    font: inherit;
+    background: #fff;                
+    border: 1px solid #b5c9ac;       
+    border-radius: 6px;               
+}
+
+.form-main input:hover,               
+.form-main select:hover {             
+    border-color: #209726;            /*light green*/
+}
+
+
+
+.form-main fieldset {                 
+    margin: 0 0 1.5rem;               
+    padding: 1.2rem 1.2rem 1.4rem;    
+    border: 1px solid #b5c9ac;        
+    border-radius: 6px;               
+    min-width: 0;                     
+}
+
+.form-main legend {                   
+    padding: 0 0.6rem;                
+    font-weight: 700;                 
+    color: #17701b;                  
+}
+
+.form-main fieldset label {           
+    margin-top: 1rem;                 
+}
+
+
+.form-main #postcode {                
+    max-width: 180px;                 
+}
+
+
+.form-main button {                   
+    display: inline-block;            
+    min-width: 120px;                 
+    margin: 0 0.75rem 0 0;            
+    padding: 0.7rem 1.5rem;           
+    font: inherit;                    
+    font-weight: 600;                 
+    border-radius: 9px;               
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+.form-main button {    
+    color: #fff;                     
+    background-color: #209726;        
+    border: 1px solid #209726;        
+}
+
+.form-main button:hover {  
+    background-color: #17701b;       
+    border-color: #17701b;            
+}
