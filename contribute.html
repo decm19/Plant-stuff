@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contribution form (page title WIP)</title>
+</head>
+
+<body>
+  <header><!-- site-wide header goes here --></header>
+  <main>
+    <form id="contribute" method="post" action="mailto:abc@gmail.com">
+      <p>
+        <label for="contributor_name">Contributor name:</label>
+        <input type="text" id="contributor_name" name="contributor_name" required maxlength="25" pattern="[a-zA-Z ]+">
+      </p>
+
+      <p>
+        <label for="plant_name">Plant name:</label>
+        <input type="text" id="plant_name" name="plant_name" required maxlength="25" pattern="[a-zA-Z ]+">
+      </p>
+
+      <p>
+        <label for="plant_image">Upload image of plant:</label>
+        <input type="file" id="plant_image" name="plant_image" required>
+      </p>
+      
+      <p>
+        <label for="comments">Comments:</label>
+        <textarea rows="5" cols="30" id="comments" name="comments"></textarea>
+      </p>
+      
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </main>
+  <footer><!-- site-wide footer goes here if we decide to have one--></footer>
+</body>
+
+</html>
