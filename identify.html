@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Explore the families, genera and species" />
+  <meta name="keywords" content="FloraDB" />
+  <meta name="author" content=" " />
+  <title>Identify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.svg" alt="FloraDB logo" height="50" />
+    </a>
+  </div>
+  
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+  <label for="menu-toggle" class="hamburger" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="nav-center">
+    
+	<div class="dropdown">
+      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
+      <div class="dropdown-menu">
+        <a href="explorer1.html">Families</a>
+        <a href="explorer2.html">Genera</a>
+        <a href="explorer3.html">Species</a>
+      </div>
+    </div>
+	
+    <a href="identify.html" class="nav-btn">Identify</a>
+    <a href="" class="nav-btn">Contribution</a>
+	<a href="" class="nav-btn">Contributor</a>
+    <a href="" class="nav-btn">Enquiry</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="dropdown">
+      <button type="button" class="profile-btn" aria-label="Account menu" aria-haspopup="true">
+  <img src="profilelogo.svg" alt="" />
+  </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a href="https://www.swinburne.edu.my/">Profile</a>
+		<a href="register.html">Register</a>
+        <a href="https://www.swinburne.edu.my/">Login</a>
+      </div>
+    </div>
+  </div>
+
+
+<!-- identify page start -->
+</header>
+
+    <main class="identify-page">
+
+        
+        <section class="identify-panel">
+            <h1>Plant Identification</h1>
+
+            <section class="guidelines">
+                <h2>Guidelines for Plant Identification</h2>
+
+                <ul>
+                    <li>
+                        <strong>Maximum of 4 pictures:</strong>
+                        Upload up to four pictures of the same plant.
+                    </li>
+                    <li>
+                        <strong>Include a plant feature:</strong>
+                        Try to show a leaf, flower, fruit, or bark clearly.
+                    </li>
+                    <li>
+                        <strong>Recommended image width:</strong>
+                        Use clear images with a width of around 1280 pixels.
+                    </li>
+                </ul>
+            </section>
+
+            <figure class="dimension-guide">
+                <img
+                    src="images/image-dimensions.png"
+                    alt="Examples of portrait and landscape image dimensions"
+                >
+                <figcaption>
+                    Recommended image orientation and dimensions.
+                </figcaption>
+            </figure>
+
+            <form
+                action="#"
+                method="post"
+                enctype="multipart/form-data"
+                class="identify-form"
+            >
+                <div class="upload-area">
+                    <label for="plant-images">Image Files</label>
+
+                    <input
+                        type="file"
+                        id="plant-images"
+                        name="plant-images"
+                        accept="image/*"
+                        multiple
+                        required
+                    >
+
+                    <p>Upload up to 4 clear images of the same plant.</p>
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Example Identification Result -->
+        <section class="identification-result">
+            <h2>Example Identification Result</h2>
+
+            <div class="plant-overview">
+                <section class="plant-names">
+                    <h3>Plant Names</h3>
+
+                    <dl>
+                        <dt><strong>Scientific Plant Name:</strong></dt>
+                        <dd><i>Nephelium lappaceum</i></dd>
+
+                        <dt><strong>Common Name:</strong></dt>
+                        <dd>Rambutan</dd>
+                    </dl>
+                </section>
+
+                <aside class="plant-introduction">
+                    <h3>About This Plant</h3>
+                    <p>
+                        Rambutan (Nephelium lappaceum) is an evergreen cousin of the lychee, named from rambut, Malay for "hair", after the soft spines on its fruit, whose rind peels off to reveal sweet, translucent flesh around one seed.
+                        12 Native to Malaysia and grown across Southeast Asia, it thrives in humid tropical lowlands near the Equator at 22-30 °C with 2,000-5,000 mm of well-spread rain and deep, free-draining, acidic soil.
+                        21 Seedlings take 5-6 years and often bear sour fruit, so growers bud or graft selected clones that crop in 2-3 years, with fruit ripening about 15-18 weeks after flowering; it is mostly eaten fresh.
+                    </p>
+                </aside>
+            </div>
+
+            <section class="identified-plants">
+                <h3>Plant Identified</h3>
+
+                <div class="plant-gallery">
+                    <figure>
+                        <img src="rambutan1.png" alt="Nephelium lappaceum 1">
+                    </figure>
+
+                    <figure>
+                        <img src="rambutan2.png" alt="Nephelium lappaceum 2">
+                    </figure>
+
+                    <figure>
+                        <img src="rambutan3.png" alt="Nephelium lappaceum 3">
+                    </figure>
+                </div>
+            </section>
+        </section>
+
+        
+        <!-- Care tips -->
+        <section class="care-tips">
+            <h2>Care Tips for This Plant</h2>
+
+            <ol class="care-tip-list">
+                <li class="care-tip-card">
+                    <h3>
+                        <!-- <span class="tip-number">1</span> -->
+                        Water only in dry spells
+                    </h3>
+                    <ul>
+                        <li>Rainfall of 2,000-5,000 mm usually covers its needs, so irrigation isn't widely used.</li>
+                        <li>Irrigate only where rainfall is below optimum or the pattern is uncertain.</li>
+                        <li>Keep drainage free, since roots suffer in waterlogged ground.</li>
+                    </ul>
+                </li>
+
+                <li class="care-tip-card">
+                    <h3>
+                        <!-- <span class="tip-number">2</span> -->
+                        Fertilise twice a year
+                    </h3>
+                    <ul>
+                        <li>Give 1 kg ammonium sulfate + 1 kg 12-24-12 per tree right after harvest.</li>
+                        <li>Repeat with 1 kg ammonium sulfate near the end of the rainy season.</li>
+                        <li>A 6,720 kg/ha crop removes about 15 kg N and 11.5 kg K per hectare.</li>
+                    </ul>
+                </li>
+
+                <li class="care-tip-card">
+                    <h3>
+                        <!-- <span class="tip-number">3</span> -->
+                        Prune lightly, shelter from wind
+                    </h3>
+                    <ul>
+                        <li>Prune lightly only to improve form and strengthen the tree.</li>
+                        <li>Strong wind during flowering and fruiting causes much damage.</li>
+                        <li>Watch for stem canker, which can be fatal if not controlled early.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+
+        <!-- Right environment -->
+        <section>
+            <h2>Right environment for this plant</h2>
+            <ol class="right-environment">
+                <li class="right-environment 1">
+                    <h3>
+                        <!-- <span class="environment-header">1</span> -->
+                        Warm and humid
+                    </h3>
+                    <ul>
+                        <li>It grows best close to the Equator, from sea level up to about 600-700 m.</li>
+                        <li>It likes 22-30 °C all year with air that stays damp (about 82% humidity).</li>
+                        <li>The dry season should not last much more than 3 months.</li>
+                    </ul>
+                </li>
+                <li class="right-environment 1">
+                    <h3>
+                        <!-- <span class="environment-header">2</span> -->
+                        Plenty of rain
+                    </h3>
+                    <ul>
+                        <li>It wants roughly 2,000-5,000 mm a year — that's 2 to 5 metres of water.</li>
+                        <li>Even 2,500 mm or more suits it fine in humid lowlands.</li>
+                        <li>What counts is that the rain is spread out, not the total, so water it if a dry spell drags on.</li>
+                    </ul>
+                </li>
+                <li class="right-environment 1">
+                    <h3>
+                        <!-- <span class="environment-header">3</span> -->
+                        Rich, loose soil
+                    </h3>
+                    <ul>
+                        <li>Best in deep, fertile soil that drains freely, with plenty of organic matter.</li>
+                        <li>Gentle slopes suit it; the water table should sit below 3 m.</li>
+                        <li>Keep the soil on the sour side (pH 4.5-6.5) — too alkaline and the leaves yellow from lack of iron and zinc.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section class="plant-location">
+    <h2>Main Location Where the Plant Can Be Found</h2>
+
+
+            <!-- Main Location Map -->
+    <figure class="location-map">
+        <a
+            href="https://www.google.com/maps/place/95000+Lachau,+Sarawak/@1.084645,111.1854611,3483m/data=!3m2!1e3!4b1!4m6!3m5!1s0x31feab888e122db5:0xaa6d09c529e9248d!8m2!3d1.084645!4d111.1854611!16s%2Fg%2F1q5bnhw26?entry=ttu&g_ep=EgoyMDI2MTAwNi4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener"
+        >
+            <img
+                src="rambutanmap.png"
+                alt="Map showing a main location where rambutan can be found"
+            >
+        </a>
+
+        
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FloraDB | COS10026 Web Technology Project</p>
+    </footer>
+
+</body>
+</html>
