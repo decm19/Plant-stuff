@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="LYH">
+<title>Enquiry</title>
+<style>
+/* ===== Enquiry page (form only) =====  */
+
+/* Two columns: photo on the left, form card on the right */
+.enquiry-layout {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fffdf5;           /* cream background behind the whole block */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Photo column: image fills its half and is cropped, not stretched */
+.enquiry-photo {
+    flex: 1 1 320px;
+    margin: 0;
+    min-height: 300px;
+}
+
+.enquiry-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form card column */
+.enquiry-card {
+    flex: 1 1 320px;
+    padding: 20px 28px;
+    box-sizing: border-box;
+}
+
+
+
+/* First name / last name sit side by side */
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+/* Inputs, select and textarea share the same dark rounded border */
+.enquiry-card input,
+.enquiry-card select,
+.enquiry-card textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 2px solid #222222;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #ffffff;
+}
+
+/* Highlight the field being typed in */
+.enquiry-card input:focus,
+.enquiry-card select:focus,
+.enquiry-card textarea:focus {
+    outline: none;
+    border-color: #2f5233;
+    background-color: #f1f8ee;
+}
+
+/* Submit button */
+.enquiry-card button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2f5233;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.enquiry-card button:hover {
+    background-color: #3f7748;
+}
+
+/* Small screens: stack photo above the form and names on top of each other */
+@media (max-width: 700px) {
+    .enquiry-photo {
+        min-height: 200px;
+    }
+
+    .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="enquiry-layout">
+
+  <!-- Left side: plant photo -->
+  <figure class="enquiry-photo">
+    <img src="images/plant.png" alt="Peace lily plant in a ribbed ceramic pot">
+  </figure>
+
+  <!-- Right side: the form card -->
+  <div class="enquiry-card">
+    <h1>Enquiry Form</h1>
+
+    <form id="enquiryForm" action="#" method="post">
+
+      <div class="name-row">
+        <div class="name-field">
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            maxlength="25"
+            pattern="[A-Za-z]+"
+            title="Alphabetical characters only"
+            placeholder="e.g. Jane"
+            required>
+        </div>
+
+        <div class="name-field">
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            maxlength="25"
+            pattern="[A-Za-z]+"
+            title="Alphabetical characters only"
+            placeholder="e.g. Doe"
+            required>
+        </div>
+      </div>
+
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="e.g. jane.doe@example.com"
+        required>
+
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        maxlength="10"
+        pattern="[0-9]{8,10}"
+        title="Numbers only, up to 10 digits"
+        placeholder="e.g. 0123456789"
+        required>
+
+      <label for="enquiryType">Enquiry:</label>
+      <select id="enquiryType" name="enquiryType" required>
+        <option value="" disabled selected>Please select</option>
+        <option value="families">Families</option>
+        <option value="genera">Genera</option>
+        <option value="species">Species</option>
+      </select>
+
+      <label for="comments">Comments:</label>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="5"
+        cols="40"
+        placeholder="Tell us more about your enquiry..."
+        required></textarea>
+
+      <button type="submit">Submit Enquiry</button>
+
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
