@@ -676,8 +676,7 @@ td {
 }
 
 
-/* ===== Image dimension guide ===== */
-
+/* Image */
 .dimension-guide {
     margin: 24px auto;
     text-align: center;
@@ -759,7 +758,6 @@ td {
 }
 
 
-/* ===== Example identification result ===== */
 
 
 .plant-overview {
@@ -901,7 +899,6 @@ td {
 }
 
 
-/* ===== Responsive layout for smaller screens ===== */
 
 @media screen and (max-width: 850px) {
     .site-header {
