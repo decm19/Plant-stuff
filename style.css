@@ -612,3 +612,342 @@ td {
     background-color: #17701b;       
     border-color: #17701b;            
 }
+
+
+
+
+
+/* identify page css */
+.identify-page {
+    width: 92%;
+    max-width: 1180px;
+    margin: 32px auto;
+}
+
+
+
+.identify-panel,
+.identification-result,
+.care-tips {
+    margin-bottom: 32px;
+    padding: 36px;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(42, 65, 55, 0.2);
+}
+
+.identify-panel h1,
+.identification-result > h2,
+.care-tips > h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.identify-panel h1 {
+    font-size: 2.5rem;
+}
+
+.identify-panel h1::after {
+    display: block;
+    width: 70px;
+    height: 4px;
+    margin: 10px auto 0;
+    background-color: #19866b;
+    content: "";
+}
+
+
+/* ===== Guidelines ===== */
+
+.guidelines {
+    max-width: 850px;
+    margin: 24px auto;
+}
+
+.guidelines h2 {
+    text-align: center;
+}
+
+.guidelines ul {
+    padding-left: 24px;
+}
+
+.guidelines li {
+    margin-bottom: 10px;
+}
+
+
+/* ===== Image dimension guide ===== */
+
+.dimension-guide {
+    margin: 24px auto;
+    text-align: center;
+}
+
+.dimension-guide img {
+    width: 300px;
+    max-height: 150px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.dimension-guide figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+
+/* ===== Upload form ===== */
+
+.identify-form {
+    max-width: 850px;
+    margin: 28px auto 0;
+    text-align: center;
+}
+
+.upload-area {
+    min-height: 170px;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #23886d;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.upload-area label {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#plant-images {
+    width: 100%;
+    max-width: 430px;
+    padding: 10px;
+    font: inherit;
+}
+
+.upload-area p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.identify-form button {
+    margin-top: 24px;
+    padding: 12px 34px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #16856a;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.identify-form button:hover,
+.identify-form button:focus {
+    background-color: #10684f;
+}
+
+.identify-form button:focus,
+#plant-images:focus,
+.main-nav a:focus,
+.search-icon:focus {
+    outline: 3px solid #e1a928;
+    outline-offset: 3px;
+}
+
+
+/* ===== Example identification result ===== */
+
+
+.plant-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.plant-overview > .plant-names,
+.plant-overview > aside.plant-introduction {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    float: none !important;
+    justify-self: stretch;
+
+    padding: 20px;
+    background-color: #fbfaf1;
+    border: 2px solid #23886d;
+    box-sizing: border-box;
+}
+
+.plant-names h3,
+.plant-introduction h3 {
+    margin-top: 0;
+}
+
+.plant-names dl {
+    margin: 0;
+}
+
+.plant-names dt {
+    margin-top: 12px;
+}
+
+.plant-names dd {
+    margin: 2px 0 12px;
+}
+
+.plant-introduction p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ===== Plant image gallery ===== */
+
+.identified-plants {
+    margin-top: 30px;
+}
+
+.identified-plants > h3 {
+    text-align: center;
+}
+
+.plant-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.plant-gallery figure {
+    margin: 0;
+    overflow: hidden;
+    border: 3px solid #23886d;
+    border-radius: 8px;
+}
+
+.plant-gallery figure img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+
+
+/* ===== Care tips ===== */
+
+.care-tips > h2 {
+    margin-bottom: 26px;
+}
+
+/* .care-tip-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    list-style: none;
+} */
+
+/* .care-tip-card {
+    padding: 22px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.24);
+    box-shadow: 0 2px 9px rgba(42, 65, 55, 0.14);
+} */
+
+.care-tip-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tip-number {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #16856a;
+    color: #ffffff;
+}
+
+.care-tip-card ul {
+    padding-left: 20px;
+}
+
+.care-tip-card li {
+    margin-bottom: 8px;
+}
+
+
+/* ===== Footer ===== */
+
+.site-footer {
+    width: 100%;
+    padding: 18px;
+    background-color: #cfe0d9;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+/* ===== Responsive layout for smaller screens ===== */
+
+@media screen and (max-width: 850px) {
+    .site-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav {
+        order: 3;
+        flex-basis: 100%;
+        gap: 8px 20px;
+    }
+
+    .search-icon {
+        margin-left: auto;
+    }
+
+    .plant-gallery,
+    .care-tip-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .identify-page {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    .identify-panel,
+    .identification-result,
+    .care-tips {
+        padding: 22px 16px;
+    }
+
+    .identify-panel h1 {
+        font-size: 1.9rem;
+    }
+
+  
+    .site-header > a:first-child {
+        flex-basis: 130px;
+    }
+
+    .site-header > a:first-child img {
+        width: 130px;
+    }
+}
+
