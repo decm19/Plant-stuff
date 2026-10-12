@@ -876,6 +876,12 @@ tbody th {
     background-image: url(../project_members/kazuki_assets/background.jpg);
 }
 
+/* You Han profile page related rules */
+
+.youhan-profile-background-image {
+    background-image: url(../project_members/youhan_assets/background.jpg);
+}
+
 /* index.html */
 
 a.card:hover {
