@@ -925,6 +925,14 @@ td.border {
     background-color: #ffffff90;
 } 
 
+.background-white {
+    background-color: white;
+}
+
+.background-black {
+    background-color: black;
+}
+
 .border-ffffff10 {
     border-color: #ffffff10; 
 }
@@ -943,6 +951,10 @@ td.border {
 
 .corner-100 {
     border-radius: 100%;
+}
+
+.gap-2 {
+    gap: 2rem;
 }
 
 .gap-1 {
@@ -1029,7 +1041,7 @@ html, body {
 }
 
 .m-2 {
-    margin: 2;
+    margin: 2rem;
 }
 
 @media screen and (max-width: 800px){
@@ -1040,4 +1052,8 @@ html, body {
 
 .flex-basis-0 {
     flex-basis: 0;
+}
+
+.column-20 {
+    column-width: 20rem;
 }
