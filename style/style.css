@@ -687,7 +687,7 @@ tbody th {
     gap: 24px;
 }
 
-.card-list li {
+.card-list > li {
     position: relative;
     perspective: 1000px;
     width: 340px;
@@ -828,7 +828,9 @@ tbody th {
 
 .photo-row figcaption {
     margin-top: 3px;
-	min-height: 2.5em;
+    height: 2.6em;        
+    line-height: 1.25;
+    overflow: hidden;    
 }
 
 .card-back h4 {
