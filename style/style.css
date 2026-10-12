@@ -1206,7 +1206,7 @@ html, body {
     align-items: start;
 }
 
-.plant-overview > .plant-names,
+.plant-overview > .plant_names,
 .plant-overview > aside.plant-introduction {
     width: auto !important;
     min-width: 0 !important;
@@ -1220,20 +1220,20 @@ html, body {
     box-sizing: border-box;
 }
 
-.plant-names h3,
+.plant_names h3,
 .plant-introduction h3 {
     margin-top: 0;
 }
 
-.plant-names dl {
+.plant_names dl {
     margin: 0;
 }
 
-.plant-names dt {
+.plant_names dt {
     margin-top: 12px;
 }
 
-.plant-names dd {
+.plant_names dd {
     margin: 2px 0 12px;
 }
 
