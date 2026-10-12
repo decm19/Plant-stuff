@@ -1082,6 +1082,9 @@ html, body {
     margin: 32px auto;
 }
 
+.identify-page > section {
+    margin-bottom: 32px;
+}
 
 
 .identify-panel,
@@ -1111,7 +1114,6 @@ html, body {
     content: "";
 }
 
-
 /* ===== Guidelines ===== */
 
 .guidelines {
@@ -1129,25 +1131,6 @@ html, body {
 
 .guidelines li {
     margin-bottom: 10px;
-}
-
-
-/* Image */
-.dimension-guide {
-    margin: 24px auto;
-    text-align: center;
-}
-
-.dimension-guide img {
-    width: 300px;
-    max-height: 150px;
-    margin: 0 auto;
-    object-fit: contain;
-}
-
-.dimension-guide figcaption {
-    margin-top: 8px;
-    font-size: 0.9rem;
 }
 
 
@@ -1188,7 +1171,7 @@ html, body {
     font-size: 0.9rem;
 }
 
-/* .identify-form button {
+.identify-form button {
     margin-top: 24px;
     padding: 12px 34px;
     border: 0;
@@ -1206,13 +1189,17 @@ html, body {
 }
 
 .identify-form button:focus,
-#plant-images:focus,
-.search-icon:focus {
+#plant-images:focus {
     outline: 3px solid #e1a928;
     outline-offset: 3px;
-} */
+}
 
-
+.identification-result h2 {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px; 
+}
 
 
 .plant-overview {
@@ -1258,7 +1245,6 @@ html, body {
 }
 
 
-
 /* ===== Plant image gallery ===== */
 
 .identified-plants {
@@ -1289,54 +1275,28 @@ html, body {
     object-fit: cover;
 }
 
-
-
 /* ===== Care tips ===== */
 
 .care-tips > h2 {
-    margin-bottom: 26px;
+    margin-bottom: 12px;
 }
 
-/* .care-tip-list {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    list-style: none;
-} */
 
-/* .care-tip-card {
-    padding: 22px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.24);
-    box-shadow: 0 2px 9px rgba(42, 65, 55, 0.14);
-} */
-
-.care-tip-card h3 {
+.care-tip h3 {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.tip-number {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 42px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #16856a;
-    color: #ffffff;
-}
 
-.care-tip-card ul {
+.care-tip ul {
+    margin-left: 0;
     padding-left: 20px;
 }
-
-.care-tip-card li {
+    
+.care-tip li {
     margin-bottom: 8px;
 }
+
 
 /* identify css page end */
