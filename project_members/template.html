@@ -1,0 +1,107 @@
+<!--
+	HOW TO USE THIS TEMPLATE
+
+	1. Put your name in the <title> element in <head>
+	2. Set a background image or background color using a class on <body>, e.g. by using YOURNAME-profile-background-image
+	3. Edit <main> to your information
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="height-min-100">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content=""/>
+	<meta name="keywords" content="FloraDB" />
+	<meta name="author" content=" " />  
+	<link rel="stylesheet" href="../style.css">
+
+	<title>YOUR_NAME</title>
+</head>
+
+<body class="style-background-image YOURNAME-profile-background-image height-min-100 flex flex-col">
+	<header class="navbar">
+
+		<div class="logo">
+			<a href="index.html">
+				<img src="../logo.svg" alt="FloraDB logo" height="50" />
+			</a>
+		</div>
+
+		<input type="checkbox" id="menu-toggle" class="menu-toggle">
+		<label for="menu-toggle" class="hamburger" aria-hidden="true">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+
+		<nav class="nav-center">
+
+			<div class="dropdown">
+				<a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
+				<div class="dropdown-menu">
+					<a href="explorer1.html">Families</a>
+					<a href="explorer2.html">Genera</a>
+					<a href="explorer3.html">Species</a>
+				</div>
+			</div>
+
+			<a href="" class="nav-btn">Identify</a>
+			<a href="" class="nav-btn">Contribution</a>
+			<a href="" class="nav-btn">Contributor</a>
+			<a href="" class="nav-btn">Enquiry</a>
+		</nav>
+
+		<div class="nav-right">
+			<div class="dropdown">
+				<button type="button" class="profile-btn" aria-label="Account menu" aria-haspopup="true">
+					<img src="../profilelogo.svg" alt="" />
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="https://www.swinburne.edu.my/">Profile</a>
+					<a href="register.html">Register</a>
+					<a href="https://www.swinburne.edu.my/">Login</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="backdrop-filter-blur-10 flex-grow p-2 flex justify-content-center">
+		<div class="background-ffffff90 max-width-70 margin-horizontal-auto corner-1 p-2 flex flex-responsive flex-grow gap-05">
+			<div class="flex-basis-0 flex flex-col align-items-center justify-content-start gap-0">
+				<img src="YOURNAME_assets/profile.jpg" alt="Profile picture" class="floating max-width-15 corner-100 aspect-ratio-1 object-cover border-groove border-ffffff10 p-20px">
+				<div class="font-size-200">YOUR_NAME</div>
+				<table class="profile">
+					<tr>
+						<th scope="row">Student&#xA0;ID:</th>
+						<td class="arial">101234567</td>
+					</tr>
+					<tr>
+						<th scope="row">Course:</th>
+						<td class="text-000000ff">Bachelor of COURSE_NAME</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="text-center">
+							<address><a href="mailto:101234567@students.swinburne.edu.my">101234567@students.swinburne.edu.my</a></address>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<hr>
+			<div class="flex-grow">
+				<h2>About me</h2>
+				<!--
+					feel free to format this part however you'd like. i'd suggest using <h3>, <p>, and anything else you want. instructions copied from the assignment pdf: 
+					include personal profile, such as resume, interests, or information that is related to you. This extra information gives you an opportunity to extend the techniques you apply in your assignment, and should include:
+					• Demographic information about you
+					• Description of hometown
+					• Your hobbies etc.
+				-->
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy;FloraDB</p>
+	</footer>
+</body>
+
+</html>
