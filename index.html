@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Explore the families, genera and species" />
+	<meta name="keywords" content="FloraDB" />
+	<meta name="author" content=" " />
+	<title>FloraDB</title>
+	<link rel="stylesheet" href="style/style.css">
+
+	<style>
+		.card {
+			color: unset;
+			text-decoration: unset;
+		}
+
+		.styleless_link {
+			color: unset;
+			text-decoration: unset;
+		}
+
+		.styleless_link:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="navbar">
+
+		<div class="logo">
+			<a href="index.html">
+				<img src="logo.svg" alt="FloraDB logo" height="50" />
+			</a>
+		</div>
+
+		<input type="checkbox" id="menu-toggle" class="menu-toggle">
+		<label for="menu-toggle" class="hamburger" aria-hidden="true">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+
+		<nav class="nav-center">
+
+			<div class="dropdown">
+				<a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
+				<div class="dropdown-menu">
+					<a href="explorer1.html">Families</a>
+					<a href="explorer2.html">Genera</a>
+					<a href="explorer3.html">Species</a>
+				</div>
+			</div>
+
+			<a href="" class="nav-btn">Identify</a>
+			<a href="" class="nav-btn">Contribution</a>
+			<a href="" class="nav-btn">Contributor</a>
+			<a href="" class="nav-btn">Enquiry</a>
+		</nav>
+
+		<div class="nav-right">
+			<div class="dropdown">
+				<button type="button" class="profile-btn" aria-label="Account menu" aria-haspopup="true">
+					<img src="profilelogo.svg" alt="" />
+				</button>
+				<div class="dropdown-menu dropdown-menu-right">
+					<a href="https://www.swinburne.edu.my/">Profile</a>
+					<a href="register.html">Register</a>
+					<a href="https://www.swinburne.edu.my/">Login</a>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<main>
+		<div
+			style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a3/Taman_Negara%2C_Malaysia%2C_Tall_trees_in_canopy.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+			<div style="padding: 5rem; backdrop-filter: brightness(60%);">
+				<h1 style="text-align: center; color: white;">HELP US PROTECT MALAYSIA'S PLANTS</h1>
+				<p style="text-align: center; color: white;">FloraDB is a <a class="styleless_link" href="todo!">citizen
+						science</a> project aimed at cataloging and identifying endangered, rare and threatened (ERT)
+					plants in Malaysia.</p>
+			</div>
+		</div>
+		<div id="links" class="m-2 gap-2 flex flex-responsive justify-content-center">
+			<a class="card" href="explorer.html">
+				<h3>Catalog</h3>
+				<p>View our catalog of plants</p>
+			</a>
+			<a class="card" href="identify.html">
+				<h3>Identify</h3>
+				<p>Upload a photo of a plant and find out what it is</p>
+			</a>
+		</div>
+		<div id="potd" class="m-2">
+			<h2>Plant of the day</h2>
+			<p>Coming soon! (Once we have access to php)</p>
+		</div>
+		<div id="aboutus" class="m-2">
+			<h2>About us</h2>
+			<p>FloraDB is a citizen science project aimed at cataloging and identifying endangered, rare and threatened
+				(ERT) plants in Malaysia. todo!</p>
+			<p>Check out our project members <a href="todo! profiles?">here</a></p>
+		</div>
+	</main>
+	<footer>
+		<nav class="footer-links">
+			<a href="acknowledgment.html">Acknowledgment</a>
+			<a href="enhancement.html">Enhancement</a>
+			<a href="profile.html">Profile</a>
+			<a href="">Video</a>
+		</nav>
+		<p>&copy; 2026 FloraDB</p>
+	</footer>
+</body>
+
+</html>
