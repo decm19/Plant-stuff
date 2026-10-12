@@ -1116,6 +1116,7 @@ html, body {
     content: "";
 }
 
+
 /* ===== Guidelines ===== */
 
 .guidelines {
@@ -1134,6 +1135,8 @@ html, body {
 .guidelines li {
     margin-bottom: 10px;
 }
+
+
 
 
 /* ===== Upload form ===== */
@@ -1247,6 +1250,7 @@ html, body {
 }
 
 
+
 /* ===== Plant image gallery ===== */
 
 .identified-plants {
@@ -1276,6 +1280,8 @@ html, body {
     height: 240px;
     object-fit: cover;
 }
+
+
 
 /* ===== Care tips ===== */
 
