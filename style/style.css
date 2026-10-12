@@ -828,6 +828,7 @@ tbody th {
 
 .photo-row figcaption {
     margin-top: 3px;
+	min-height: 2.5em;
 }
 
 .card-back h4 {
