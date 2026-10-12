@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>Contribution form (page title WIP)</title>
+<meta charset="UTF-8">
+<meta name="author" content="LYH">
+<title>Contribution Form</title>
+<link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
-  <header><!-- site-wide header goes here --></header>
-  <main>
+<body class="page-form">
+<header class="navbar">
+
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.svg" alt="FloraDB logo" height="50" />
+    </a>
+  </div>
+  
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="nav-center">
+    
+	<div class="dropdown">
+      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
+      <div class="dropdown-menu">
+        <a href="explorer1.html">Families</a>
+        <a href="explorer2.html">Genera</a>
+        <a href="explorer3.html">Species</a>
+      </div>
+    </div>
+	
+    <a href="identify.html" class="nav-btn">Identify</a>
+    <a href="contribute.html" class="nav-btn">Contribution</a>
+	<a href="contributor.html" class="nav-btn">Contributor</a>
+    <a href="enquiry.html" class="nav-btn">Enquiry</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="dropdown">
+      <button type="button" class="profile-btn">
+  <img src="profilelogo.svg" alt="profilelogo" />
+  </button>
+      <div class="dropdown-menu dropdown-menu-right">
+			<a href="profile.html">Profile</a>
+			<a href="register.html">Register</a>
+			<a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+  <main class="form-main">
+  <section>
     <form id="contribute" method="post" action="mailto:abc@gmail.com">
       <p>
         <label for="contributor_name">Contributor name:</label>
@@ -32,8 +79,17 @@
       
       <button type="submit" value="Submit">Submit</button>
     </form>
+  </section>
   </main>
-  <footer><!-- site-wide footer goes here if we decide to have one--></footer>
+    <footer>
+  <nav class="footer-links">
+    <a href="acknowledgment.html">Acknowledgment</a>
+    <a href="enhancement.html">Enhancement</a>
+    <a href="profile.html">Profile</a>
+	<a href="">Video</a>
+  </nav>
+  <p>&copy; 2026 FloraDB</p>
+</footer>
 </body>
 
 </html>

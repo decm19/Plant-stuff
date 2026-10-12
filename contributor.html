@@ -4,212 +4,61 @@
 <meta charset="UTF-8">
 <meta name="author" content="LYH">
 <title>Contributors</title>
-<style>
-  /* ===== Contributor page =====  */
+<link rel="stylesheet" href="style/style.css">
 
-  body {
-    margin: 0;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fffdf5;
-  }
-
-  h1, h2 {
-    font-family: Georgia, "Times New Roman", serif;
-  }
-
-  /* ---------- Card grid ---------- */
-  .card-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-
-  .card-list li {
-    position: relative;
-    perspective: 1000px;
-    width: 340px;
-    height: 460px;
-  }
-
-  /* Hidden checkbox that stores whether the card is flipped */
-  .flip-toggle {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-  }
-
-  /* Checked checkbox = flipped card (no JavaScript needed) */
-  .flip-toggle:checked + .card {
-    transform: rotateY(180deg);
-  }
-
-  /* Outline when tabbing to a card with the keyboard (press Space to flip) */
-  .flip-toggle:focus + .card {
-    outline: 2px solid #1f8a6a;
-    outline-offset: 3px;
-  }
-
-  /* ---------- Shared look of both faces ---------- */
-  .card-front,
-  .card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    backface-visibility: hidden;
-    background-color: #d3e3dc;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    text-align: center;
-  }
-
-  .card-back {
-    transform: rotateY(180deg);
-    padding: 18px 20px;
-  }
-
-  /* Transparent label stretched over a whole face: clicking anywhere flips the card */
-  .flip-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-
-  /* Text for screen readers only */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-  }
-
-  /* ---------- Front: contributor profile ---------- */
-  .avatar {
-    display: block;
-    width: 160px;
-    height: 160px;
-    margin: 30px auto 14px auto;
-    border: 4px solid #1f8a6a;
-    border-radius: 50%;
-    object-fit: cover;
-    background-color: #ffffff;
-  }
-
-  .card-front h3 {
-    margin: 10px 0 6px 0;
-    font-size: 1.5em;
-  }
-
-  .card-front p {
-    margin: 6px 0;
-    font-size: 0.9em;
-  }
-
-  /* Green bar at the bottom with Common / Scientific name */
-  .plant-names {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    background-color: #1f8a6a;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 0.95em;
-  }
-
-  .plant-names div {
-    flex: 1;
-    padding: 16px 8px;
-  }
-
-  .plant-names div + div {
-    border-left: 1px solid #d3e3dc;   /* thin divider between the two names */
-  }
-
-  /* ---------- Back: plant data ---------- */
-  .photo-row {
-    display: flex;
-    gap: 10px;
-  }
-
-  .photo-row figure {
-    flex: 1;
-    margin: 0;
-    font-size: 0.75em;
-  }
-
-  .photo-row img {
-    display: block;
-    width: 100%;
-    height: 115px;
-    object-fit: cover;
-  }
-
-  .photo-row figcaption {
-    margin-top: 3px;
-  }
-
-  .card-back h4 {
-    margin: 14px 0 6px 0;
-    font-size: 1.1em;
-  }
-
-  .card-back ul {
-    margin: 0;
-    padding-left: 18px;
-    text-align: left;
-    font-size: 0.85em;
-    line-height: 1.4;
-  }
-
-  /* Likes / comments / shares row */
-  .stats {
-    position: absolute;
-    left: 0;
-    bottom: 14px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    color: #555555;
-    font-size: 0.85em;
-  }
-
-  /* ---------- Contribute section ---------- */
-  .contribute h2 {
-    margin-bottom: 10px;
-  }
-
-  /* Small screens: cards fill the width */
-  @media (max-width: 420px) {
-    .card-list li {
-      width: 100%;
-    }
-  }
-</style>
 </head>
 <body>
 
+<header class="navbar">
+
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.svg" alt="FloraDB logo" height="50" />
+    </a>
+  </div>
+  
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+  <label for="menu-toggle" class="hamburger" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="nav-center">
+    
+	<div class="dropdown">
+      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
+      <div class="dropdown-menu">
+        <a href="explorer1.html">Families</a>
+        <a href="explorer2.html">Genera</a>
+        <a href="explorer3.html">Species</a>
+      </div>
+    </div>
+	
+    <a href="identify.html" class="nav-btn">Identify</a>
+    <a href="contribute.html" class="nav-btn">Contribution</a>
+	<a href="contributor.html" class="nav-btn">Contributor</a>
+    <a href="enquiry.html" class="nav-btn">Enquiry</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="dropdown">
+      <button type="button" class="profile-btn">
+  <img src="profilelogo.svg" alt="" />
+  </button>
+      <div class="dropdown-menu dropdown-menu-right">
+			<a href="profile.html">Profile</a>
+			<a href="register.html">Register</a>
+			<a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<div class="layout">
+  <main>
+  
 <h1>Contributors</h1>
 
 <section>
@@ -396,12 +245,26 @@
 
   </ul>
 </section>
+ </main>
 
-<section class="contribute">
-  <h2>Want to Contribute?</h2>
+
+
+
+  <aside>
+    <h2>Want to Contribute?</h2>
   <p>If you'd like to share your own plants or stories with the community, fill out our contributor form.</p>
   <p><a href="contribute.html">Go to Contributor Form</a></p>
-</section>
 
+  </aside>
+ </div>
+ <footer>
+  <nav class="footer-links">
+    <a href="acknowledgment.html">Acknowledgment</a>
+    <a href="enhancement.html">Enhancement</a>
+    <a href="profile.html">Profile</a>
+	<a href="">Video</a>
+  </nav>
+  <p>&copy; 2026 FloraDB</p>
+</footer>
 </body>
 </html>

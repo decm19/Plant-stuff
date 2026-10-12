@@ -4,113 +4,59 @@
 <meta charset="UTF-8">
 <meta name="author" content="LYH">
 <title>Enquiry</title>
-<style>
-/* ===== Enquiry page (form only) =====  */
-
-/* Two columns: photo on the left, form card on the right */
-.enquiry-layout {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: #fffdf5;           /* cream background behind the whole block */
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
-}
-
-/* Photo column: image fills its half and is cropped, not stretched */
-.enquiry-photo {
-    flex: 1 1 320px;
-    margin: 0;
-    min-height: 300px;
-}
-
-.enquiry-photo img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Form card column */
-.enquiry-card {
-    flex: 1 1 320px;
-    padding: 20px 28px;
-    box-sizing: border-box;
-}
-
-
-
-/* First name / last name sit side by side */
-.name-row {
-    display: flex;
-    gap: 10px;
-}
-
-.name-field {
-    flex: 1;
-}
-
-/* Inputs, select and textarea share the same dark rounded border */
-.enquiry-card input,
-.enquiry-card select,
-.enquiry-card textarea {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px;
-    border: 2px solid #222222;
-    border-radius: 6px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    background-color: #ffffff;
-}
-
-/* Highlight the field being typed in */
-.enquiry-card input:focus,
-.enquiry-card select:focus,
-.enquiry-card textarea:focus {
-    outline: none;
-    border-color: #2f5233;
-    background-color: #f1f8ee;
-}
-
-/* Submit button */
-.enquiry-card button {
-    display: block;
-    margin: 20px auto 0 auto;
-    padding: 10px 28px;
-    border: none;
-    border-radius: 6px;
-    background-color: #2f5233;
-    color: #ffffff;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-.enquiry-card button:hover {
-    background-color: #3f7748;
-}
-
-/* Small screens: stack photo above the form and names on top of each other */
-@media (max-width: 700px) {
-    .enquiry-photo {
-        min-height: 200px;
-    }
-
-    .name-row {
-        flex-direction: column;
-        gap: 0;
-    }
-}
-</style>
+<link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
+<header class="navbar">
 
-<section class="enquiry-layout">
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.svg" alt="FloraDB logo" height="50" />
+    </a>
+  </div>
+  
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" >
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
 
-  <!-- Left side: plant photo -->
-  <figure class="enquiry-photo">
-    <img src="images/plant.png" alt="Peace lily plant in a ribbed ceramic pot">
-  </figure>
+  <nav class="nav-center">
+    
+	<div class="dropdown">
+      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
+      <div class="dropdown-menu">
+        <a href="explorer1.html">Families</a>
+        <a href="explorer2.html">Genera</a>
+        <a href="explorer3.html">Species</a>
+      </div>
+    </div>
+	
+    <a href="identify.html" class="nav-btn">Identify</a>
+    <a href="contribute.html" class="nav-btn">Contribution</a>
+	<a href="contributor.html" class="nav-btn">Contributor</a>
+    <a href="enquiry.html" class="nav-btn">Enquiry</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="dropdown">
+      <button type="button" class="profile-btn">
+  <img src="profilelogo.svg" alt="profilelogo" />
+  </button>
+      <div class="dropdown-menu dropdown-menu-right">
+			<a href="profile.html">Profile</a>
+			<a href="register.html">Register</a>
+			<a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<main class="form-main">
+<section>
 
   <!-- Right side: the form card -->
   <div class="enquiry-card">
@@ -182,12 +128,25 @@
         placeholder="Tell us more about your enquiry..."
         required></textarea>
 
+      </br></br>
       <button type="submit">Submit Enquiry</button>
+	  </br></br>
 
     </form>
   </div>
 
 </section>
+</main>
+
+<footer>
+  <nav class="footer-links">
+    <a href="acknowledgment.html">Acknowledgment</a>
+    <a href="enhancement.html">Enhancement</a>
+    <a href="profile.html">Profile</a>
+	<a href="">Video</a>
+  </nav>
+  <p>&copy; 2026 FloraDB</p>
+</footer>
 
 </body>
 </html>
