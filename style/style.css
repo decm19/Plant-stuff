@@ -1214,7 +1214,7 @@ html, body {
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-aspect-ratio: 1){
     .flex-responsive {
        flex-direction: column !important;
     }
