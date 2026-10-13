@@ -870,10 +870,54 @@ tbody th {
     }
 }
 
+/* ---------- Enhancement page ---------- */
+.enhancement-grid {
+    display: grid;                         /* 四个区块用网格排列 */
+    grid-template-columns: repeat(2, 1fr); /* 固定两栏，两栏等宽，所以是 2×2 */
+    gap: 1.2rem;                           /* 区块之间的距离 */
+}
+
+/* 窄屏（700px 以下）：两栏太挤，改成一栏，四个区块上下排列 */
+@media (max-width: 700px) {
+    .enhancement-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.enhancement-grid .enhancement {
+    margin-bottom: 0;                      /* 间距交给 gap 控制，取消 main section 自带的下外边距 */
+}
+
+.enhancement h2 {
+    font-size: 1.15rem;                    /* 区块标题比普通 h2 小一点，两列放得下 */
+    border-bottom: none;                   /* 去掉标题下方的线，和截图风格一致 */
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace; /* 代码用等宽字体 */
+    font-size: 0.88em;                     /* 比正文略小 */
+    background: #eef5ea;                   /* 浅绿色底，让代码更醒目 */
+    padding: 1px 5px;                      /* 左右留一点空隙 */
+    border-radius: 4px;                    /* 圆角 */
+    overflow-wrap: anywhere;               /* 很长的选择器可以在任意位置换行，不会撑破区块 */
+}
+
+.reference {
+    font-size: 0.88rem;                    /* 参考来源字体较小 */
+    font-style: italic;                    /* 斜体，和截图一致 */
+    color: #555;                           /* 灰色 */
+}
+
 /* Kazuki's profile page related rules */
 
 .kazuki-profile-background-image {
     background-image: url(../project_members/kazuki_assets/background.jpg);
+}
+
+/* Voon Wu Zhen's profile page related rules */
+
+.wuzhen-profile-background-image {
+    background-image: url('../images/background.jpg');
 }
 
 /* You Han profile page related rules */
@@ -1314,3 +1358,16 @@ html, body {
 
 
 /* identify css page end */
+
+/* Voon Wu Zhen's profile page: unify colours with the site theme */
+.wuzhen-profile-background-image .background-ffffff90 {
+    background-color: rgba(242, 240, 204, 0.92);   /* cream card, same as main section */
+}
+
+.wuzhen-profile-background-image .border-ffffff10 {
+    border-color: #209726;                         /* avatar border uses the main green */
+}
+
+.wuzhen-profile-background-image .text-000000ff {
+    color: #1f2d1f;                                /* same text colour as the rest of the site */
+}
