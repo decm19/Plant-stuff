@@ -950,6 +950,7 @@ a.card:hover {
 .style-background-image {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0%;
 }
 
@@ -1014,16 +1015,32 @@ td.border {
     backdrop-filter: brightness(60%);
 }
 
+.p-05 {
+    padding: 0.5rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
 .p-2 {
     padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
 }
 
 .p-5 {
     padding: 5rem;
 }
 
-.background-ffffff90 {
-    background-color: #ffffff90;
+.background-ffffffa0 {
+    background-color: #ffffffa0;
 } 
 
 .background-white {
