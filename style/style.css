@@ -1005,9 +1005,43 @@ td.border {
     border-color: #ffffff10; 
 }
 
-.max-width-70 {
+
+.width-max-20 {
+    max-width: 20rem;
+}
+
+.width-max-30 {
+    max-width: 30rem;
+}
+
+.width-max-40 {
+    max-width: 40rem;
+}
+
+.width-max-50 {
+    max-width: 50rem;
+}
+
+.width-max-60 {
+    max-width: 60rem;
+}
+
+.width-max-70 {
     max-width: 70rem;
 }
+
+.width-max-80 {
+    max-width: 80rem;
+}
+
+.width-max-90 {
+    max-width: 90rem;
+}
+
+.width-max-100 {
+    max-width: 100rem;
+}
+
 
 .margin-horizontal-auto {
     margin: auto, 0;
