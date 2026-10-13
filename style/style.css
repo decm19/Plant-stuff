@@ -911,19 +911,19 @@ code {
 /* Kazuki's profile page related rules */
 
 .kazuki-profile-background-image {
-    background-image: url(../project_members/kazuki_assets/background.jpg);
+    background-image: url('../project_members/kazuki_assets/background.jpg');
 }
 
 /* Voon Wu Zhen's profile page related rules */
 
 .wuzhen-profile-background-image {
-    background-image: url('../images/background.jpg');
+    background-image: url('../project_members/wuzhen_assets/background.jpg');
 }
 
 /* You Han profile page related rules */
 
 .youhan-profile-background-image {
-    background-image: url(../project_members/youhan_assets/background.jpg);
+    background-image: url('../project_members/youhan_assets/background.jpg');
 }
 
 /* index.html */
@@ -1358,16 +1358,3 @@ html, body {
 
 
 /* identify css page end */
-
-/* Voon Wu Zhen's profile page: unify colours with the site theme */
-.wuzhen-profile-background-image .background-ffffff90 {
-    background-color: rgba(242, 240, 204, 0.92);   /* cream card, same as main section */
-}
-
-.wuzhen-profile-background-image .border-ffffff10 {
-    border-color: #209726;                         /* avatar border uses the main green */
-}
-
-.wuzhen-profile-background-image .text-000000ff {
-    color: #1f2d1f;                                /* same text colour as the rest of the site */
-}
