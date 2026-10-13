@@ -932,7 +932,20 @@ a.card:hover {
     filter: contrast(0.9);
 }
 
+.index-html-background-image {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a3/Taman_Negara%2C_Malaysia%2C_Tall_trees_in_canopy.jpg);
+}
+
 /* Generic utility classes */
+
+.styleless_link {
+    color: unset;
+    text-decoration: unset;
+}
+
+.styleless_link_hover:hover {
+    text-decoration: underline;
+}
 
 .style-background-image {
     background-repeat: no-repeat;
@@ -957,6 +970,18 @@ td.border {
     height: 4rem;
 }
 
+.height-8 {
+    height: 8rem;
+}
+
+.height-12 {
+    height: 12rem;
+}
+
+.height-16 {
+    height: 16rem;
+}
+
 .flex {
     display: flex;
 }
@@ -979,6 +1004,14 @@ td.border {
 
 .backdrop-filter-blur-10 {
     backdrop-filter: blur(10px);
+}
+
+.backdrop-filter-blur-5 {
+    backdrop-filter: blur(5px);
+}
+
+.backdrop-filter-brightness-60 {
+    backdrop-filter: brightness(60%);
 }
 
 .p-2 {
@@ -1044,11 +1077,16 @@ td.border {
 
 
 .margin-horizontal-auto {
-    margin: auto, 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .corner-1 {
     border-radius: 1rem;
+}
+
+.corner-05 {
+    border-radius: 0.5rem;
 }
 
 .corner-100 {
@@ -1111,6 +1149,14 @@ td.border {
     color: rgb(0, 0, 0);
 }
 
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
 .text-center {
     text-align: center;
 }
@@ -1146,11 +1192,16 @@ html, body {
     margin: 2rem;
 }
 
+.m-vertical-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 800px){
     .flex-responsive {
        flex-direction: column !important;
     }
- }
+}
 
 .flex-basis-0 {
     flex-basis: 0;

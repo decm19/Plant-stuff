@@ -1,5 +1,3 @@
-<!-- WIP -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +8,6 @@
 	<meta name="author" content=" " />
 	<title>FloraDB</title>
 	<link rel="stylesheet" href="style/style.css">
-
-	<style>
-		.card {
-			color: unset;
-			text-decoration: unset;
-		}
-
-		.styleless_link {
-			color: unset;
-			text-decoration: unset;
-		}
-
-		.styleless_link:hover {
-			text-decoration: underline;
-		}
-	</style>
 </head>
 
 <body class="flex flex-col">
@@ -76,41 +58,79 @@
 
 	</header>
 	<main class="flex-grow">
-		<div
-			style="background-color: black; background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a3/Taman_Negara%2C_Malaysia%2C_Tall_trees_in_canopy.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-			<div style="padding: 5rem; backdrop-filter: brightness(60%);">
-				<h1 style="text-align: center; color: white;">HELP US PROTECT MALAYSIA'S PLANTS</h1>
-				<p style="text-align: center; color: white;">FloraDB is a <a class="styleless_link" href="https://en.wikipedia.org/wiki/Citizen_science">citizen
+		<div class="background-black style-background-image index-html-background-image">
+			<div class="p-5 backdrop-filter-brightness-60">
+				<h1 class="text-center text-white">HELP US PROTECT MALAYSIA'S PLANTS</h1>
+				<p class="text-center text-white">FloraDB is a <a class="styleless_link styleless_link_hover"
+						href="https://en.wikipedia.org/wiki/Citizen_science">citizen
 						science</a> project aimed at cataloging and identifying endangered, rare and threatened (ERT)
 					plants in Malaysia.</p>
 			</div>
 		</div>
-		<div id="links" class="m-2 gap-2 flex flex-responsive justify-content-center">
-			<a class="card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1" href="explorer.html">
-				<img class="height-4" alt="Explorer icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2staW1hZ2UgcHJldmlldy1pY29uIj48cGF0aCBkPSJtMjAgMTMuNy0yLjEtMi4xYTIgMiAwIDAgMC0yLjggMEw5LjcgMTciLz48cGF0aCBkPSJNNCAxOS41di0xNUEyLjUgMi41IDAgMCAxIDYuNSAySDE5YTEgMSAwIDAgMSAxIDF2MThhMSAxIDAgMCAxLTEgMUg2LjVhMSAxIDAgMCAxIDAtNUgyMCIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iOCIgcj0iMiIvPjwvc3ZnPg==">
-				<div><h3>Explorer</h3>
-				<p>Explore our catalog of plants</p></div>
-			</a>
-			<a class="card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1" href="identify.html">
-				<img class="height-4" alt="Explorer icon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNlYXJjaCBwcmV2aWV3LWljb24iPjxwYXRoIGQ9Im0yMSAyMS00LjM0LTQuMzQiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PC9zdmc+">
-				<div><h3>Identify</h3>
-				<p>Upload a photo of a plant and find out what it is</p></div>
-			</a>
-		</div>
-		<div id="potd" class="m-2">
-			<h2>Plant of the Day</h2>
-			<p>Coming soon! (Once we have access to php)</p>
-		</div>
-		<div id="citizenscience" class="m-2">
-			<h2>Help Us With Your Plant Photos</h2>
-			<p>Being a <a href="https://en.wikipedia.org/wiki/Citizen_science">citizen science</a> project, we rely on <a href="contributor.html">our contributors</a> for valuable data points and insight.</p>
-			<p>If you're knowledgable about plants and want to help us, please take a look at our <a href="contribute.html">contribution form</a>!</p>
-		</div>
-		<div id="aboutus" class="m-2">
-			<h2>About Us</h2>
-			<p>FloraDB is a citizen science project aimed at cataloging and identifying endangered, rare and threatened
-				(ERT) plants in Malaysia. todo!</p>
-			<p>Check out our project members <a href="todo! profiles?">here</a></p>
+		<div class="p-2 flex flex-col gap-1 width-max-90 margin-horizontal-auto">
+			<div id="links"
+				class="gap-2 flex flex-responsive justify-content-center width-max-80 margin-horizontal-auto">
+				<a class="styleless_link card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1"
+					href="explorer.html">
+					<img class="height-4" alt="Catalog icon"
+						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2staW1hZ2UgcHJldmlldy1pY29uIj48cGF0aCBkPSJtMjAgMTMuNy0yLjEtMi4xYTIgMiAwIDAgMC0yLjggMEw5LjcgMTciLz48cGF0aCBkPSJNNCAxOS41di0xNUEyLjUgMi41IDAgMCAxIDYuNSAySDE5YTEgMSAwIDAgMSAxIDF2MThhMSAxIDAgMCAxLTEgMUg2LjVhMSAxIDAgMCAxIDAtNUgyMCIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iOCIgcj0iMiIvPjwvc3ZnPg==">
+					<div>
+						<h3>Explorer</h3>
+						<p>Explore our catalog of plants</p>
+					</div>
+				</a>
+				<a class="styleless_link card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1"
+					href="identify.html">
+					<img class="height-4" alt="Magnifying glass icon"
+						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNlYXJjaCBwcmV2aWV3LWljb24iPjxwYXRoIGQ9Im0yMSAyMS00LjM0LTQuMzQiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PC9zdmc+">
+					<div>
+						<h3>Identify</h3>
+						<p>Upload a photo of a plant and find out what it is</p>
+					</div>
+				</a>
+				<a class="styleless_link card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1"
+					href="contribute.html">
+					<img class="height-4" alt="Image upload icon"
+						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWltYWdlLXVwIHByZXZpZXctaWNvbiI+PHBhdGggZD0iTTEwLjMgMjFINWEyIDIgMCAwIDEtMi0yVjVhMiAyIDAgMCAxIDItMmgxNGEyIDIgMCAwIDEgMiAydjEwbC0zLjEtMy4xYTIgMiAwIDAgMC0yLjgxNC4wMTRMNiAyMSIvPjxwYXRoIGQ9Im0xNCAxOS41IDMtMyAzIDMiLz48cGF0aCBkPSJNMTcgMjJ2LTUuNSIvPjxjaXJjbGUgY3g9IjkiIGN5PSI5IiByPSIyIi8+PC9zdmc+">
+					<div>
+						<h3>Contribute</h3>
+						<p>Help us expand our catalog and improve our plant identification technology</p>
+					</div>
+				</a>
+			</div>
+			<div id="potd">
+				<h2>Plant of the Day</h2>
+				<div class="flex flex-responsive align-items-center gap-2">
+					<img class="height-16 corner-05" src="images/lepisanthes-alata.jpg"
+						alt="Purple berries of Lepisanthes alata">
+					<div>
+						<h4><em>Lepisanthes alata</em></h4>
+						<p class="meta">Perupok · Family: Sapindaceae</p>
+						<p>A tree up to 10 m tall with leaves made of 8 to 12 leaflets. It bears round, purple berries
+							about 2.5 cm wide that are edible. It grows in forests up to about 500 m and is found in
+							Borneo, Peninsular Malaysia, Java and the Philippines.</p>
+						<p><a href="explorer3.html">See more in our species page</a></p>
+					</div>
+				</div>
+			</div>
+			<div id="citizenscience">
+				<h2>Help us with your Plant Photos</h2>
+				<p>Being a <a href="https://en.wikipedia.org/wiki/Citizen_science">citizen science</a> project, we rely
+					on
+					<a href="contributor.html">our contributors</a> for valuable data points and insight.
+				</p>
+				<p>If you're knowledgable about plants and want to help us, please take a look at our <a
+						href="contribute.html">contribution form</a>!</p>
+			</div>
+			<div id="aboutus">
+				<h2>About us</h2>
+				<p>We made FloraDB because we see the increasing impact of human activities in Malaysia on local
+					biodiversity and want to do something about it. Our hope is that through citizen science, we will be
+					able to better catalogue and identify endangered, rare and
+					threatened
+					(ERT) species and help protect Malaysia's biodiversity.</p>
+				<p>Check out our project members <a href="todo! profiles?">here</a></p>
+			</div>
 		</div>
 	</main>
 	<footer>
