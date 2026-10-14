@@ -926,6 +926,14 @@ code {
     background-image: url('../project_members/youhan_assets/background.jpg');
 }
 
+/* Yii Yang's profile page related rules*/
+
+.yiiyang-profile-background-image{
+	background-image: url('../project_members/yiiyang-assets/background.jpg');
+}
+
+
+
 /* index.html */
 
 a.card:hover {
