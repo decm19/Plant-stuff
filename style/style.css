@@ -994,6 +994,10 @@ td.border {
     height: 16rem;
 }
 
+.height-20 {
+    height: 20rem;
+}
+
 .flex {
     display: flex;
 }
@@ -1066,6 +1070,9 @@ td.border {
     border-color: #ffffff10; 
 }
 
+.width-100 {
+    width: 100%;
+}
 
 .width-max-20 {
     max-width: 20rem;
@@ -1187,6 +1194,34 @@ td.border {
 
 .text-center {
     text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-style: bold;
+}
+
+.text-style-unset {
+    font-style: unset;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.sticky {
+    position: sticky;
+}
+
+.top-7 {
+    top: 7rem;
+}
+
+.height-content-min {
+    height: min-content;
 }
 
 .arial {
