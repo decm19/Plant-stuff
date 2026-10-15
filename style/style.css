@@ -913,25 +913,25 @@ code {
 /* Kazuki's profile page related rules */
 
 .kazuki-profile-background-image {
-    background-image: url('../project_members/kazuki_assets/background.jpg');
+    background-image: url('../images/kazuki_assets/background.jpg');
 }
 
 /* Voon Wu Zhen's profile page related rules */
 
 .wuzhen-profile-background-image {
-    background-image: url('../project_members/wuzhen_assets/background.jpg');
+    background-image: url('../images/wuzhen_assets/background.jpg');
 }
 
 /* You Han profile page related rules */
 
 .youhan-profile-background-image {
-    background-image: url('../project_members/youhan_assets/background.jpg');
+    background-image: url('../images/youhan_assets/background.jpg');
 }
 
 /* Yii Yang's profile page related rules*/
 
 .yiiyang-profile-background-image{
-	background-image: url('../project_members/yiiyang_assets/background.jpg');
+	background-image: url('../images/yiiyang_assets/background.jpg');
 }
 
 
