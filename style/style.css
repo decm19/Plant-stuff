@@ -44,7 +44,6 @@ body {
     justify-content: center;
 	align-items: center; 
     gap: 20px;
-	flex-wrap: wrap;
     flex-grow: 1;
 }
 
@@ -414,8 +413,8 @@ footer p {
 
 
 
-@media (max-width: 800px) {
-       .family-card {
+@media screen and (max-aspect-ratio: 1){
+    .family-card {
         grid-template-columns: 1fr;
     }
 
@@ -881,7 +880,7 @@ tbody th {
 }
 
 
-@media (max-width: 700px) {
+@media screen and (max-aspect-ratio: 1){
     .enhancement-grid {
         grid-template-columns: 1fr;
     }
