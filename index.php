@@ -12,51 +12,7 @@
 </head>
 
 <body class="flex flex-col">
-	<header class="navbar">
-
-		<div class="logo">
-			<a href="index.html">
-				<img src="images/logo.svg" alt="FloraDB logo" height="50" />
-			</a>
-		</div>
-
-		<input type="checkbox" id="menu-toggle" class="menu-toggle">
-		<label for="menu-toggle" class="hamburger">
-			<span></span>
-			<span></span>
-			<span></span>
-		</label>
-
-		<nav class="nav-center">
-
-			<div class="dropdown">
-				<a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
-				<div class="dropdown-menu">
-					<a href="explorer1.html">Families</a>
-					<a href="explorer2.html">Genera</a>
-					<a href="explorer3.html">Species</a>
-				</div>
-			</div>
-
-		    <a href="identify.html" class="nav-btn">Identify</a>
-		    <a href="contribute.html" class="nav-btn">Contribution</a>
-			<a href="contributor.html" class="nav-btn">Contributor</a>
-		    <a href="enquiry.html" class="nav-btn">Enquiry</a>
-		</nav>
-
-		<div class="nav-right">
-			<div class="dropdown">
-				<button type="button" class="profile-btn">
-					<img src="images/profilelogo.svg" alt="profilelogo" />
-				</button>
-				<div class="dropdown-menu dropdown-menu-right">
-					<a href="register.html">Register</a>
-					<a href="login.html">Login</a>
-				</div>
-			</div>
-		</div>
-
-	</header>
+	<?php include "header.php" ?>
 	<main class="flex-grow">
 		<div class="background-black style-background-image index-html-background-image">
 			<div class="p-5 backdrop-filter-brightness-60">
@@ -71,7 +27,7 @@
 			<div id="links"
 				class="gap-2 flex flex-responsive justify-content-center width-max-80 margin-horizontal-auto">
 				<a class="styleless_link card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1"
-					href="explorer.html">
+					href="explorer.php">
 					<img class="height-4" alt="Catalog icon"
 						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2staW1hZ2UgcHJldmlldy1pY29uIj48cGF0aCBkPSJtMjAgMTMuNy0yLjEtMi4xYTIgMiAwIDAgMC0yLjggMEw5LjcgMTciLz48cGF0aCBkPSJNNCAxOS41di0xNUEyLjUgMi41IDAgMCAxIDYuNSAySDE5YTEgMSAwIDAgMSAxIDF2MThhMSAxIDAgMCAxLTEgMUg2LjVhMSAxIDAgMCAxIDAtNUgyMCIvPjxjaXJjbGUgY3g9IjEwIiBjeT0iOCIgcj0iMiIvPjwvc3ZnPg==">
 					<div>
@@ -80,7 +36,7 @@
 					</div>
 				</a>
 				<a class="styleless_link card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1"
-					href="identify.html">
+					href="identify.php">
 					<img class="height-4" alt="Magnifying glass icon"
 						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXNlYXJjaCBwcmV2aWV3LWljb24iPjxwYXRoIGQ9Im0yMSAyMS00LjM0LTQuMzQiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjExIiByPSI4Ii8+PC9zdmc+">
 					<div>
@@ -89,7 +45,7 @@
 					</div>
 				</a>
 				<a class="styleless_link card flex-grow flex-shrink flex-basis-0 flex flex-row align-items-center gap-1"
-					href="contribute.html">
+					href="contribute.php">
 					<img class="height-4" alt="Image upload icon"
 						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWltYWdlLXVwIHByZXZpZXctaWNvbiI+PHBhdGggZD0iTTEwLjMgMjFINWEyIDIgMCAwIDEtMi0yVjVhMiAyIDAgMCAxIDItMmgxNGEyIDIgMCAwIDEgMiAydjEwbC0zLjEtMy4xYTIgMiAwIDAgMC0yLjgxNC4wMTRMNiAyMSIvPjxwYXRoIGQ9Im0xNCAxOS41IDMtMyAzIDMiLz48cGF0aCBkPSJNMTcgMjJ2LTUuNSIvPjxjaXJjbGUgY3g9IjkiIGN5PSI5IiByPSIyIi8+PC9zdmc+">
 					<div>
@@ -109,7 +65,7 @@
 						<p>A tree up to 10 m tall with leaves made of 8 to 12 leaflets. It bears round, purple berries
 							about 2.5 cm wide that are edible. It grows in forests up to about 500 m and is found in
 							Borneo, Peninsular Malaysia, Java and the Philippines.</p>
-						<p><a href="explorer3.html#lepisanthes">See more in our species page</a></p>
+						<p><a href="explorer3.php#lepisanthes">See more in our species page</a></p>
 					</div>
 				</div>
 			</div>
@@ -117,10 +73,10 @@
 				<h2>Help us with your Plant Photos</h2>
 				<p>Being a <a href="https://en.wikipedia.org/wiki/Citizen_science">citizen science</a> project, we rely
 					on
-					<a href="contributor.html">our contributors</a> for valuable data points and insight.
+					<a href="contributor.php">our contributors</a> for valuable data points and insight.
 				</p>
 				<p>If you're knowledgable about plants and want to help us, please take a look at our <a
-						href="contribute.html">contribution form</a>!</p>
+						href="contribute.php">contribution form</a>!</p>
 			</div>
 			<div id="aboutus">
 				<h2>About us</h2>
@@ -129,19 +85,11 @@
 					able to better catalogue and identify endangered, rare and
 					threatened
 					(ERT) species and help protect Malaysia's biodiversity.</p>
-				<p>Check out our project members <a href="profile.html">here</a></p>
+				<p>Check out our project members <a href="profile.php">here</a></p>
 			</div>
 		</div>
 	</main>
-	<footer>
-		<nav class="footer-links">
-		    <a href="acknowledgment.html">Acknowledgment</a>
-		    <a href="enhancement.html">Enhancement</a>
-		    <a href="profile.html">Profile</a>
-			<a href="https://youtu.be/04BvxP1pU00">Video</a>
-		</nav>
-		<p>&copy; 2026 FloraDB</p>
-	</footer>
+	<?php include "footer.php" ?>
 </body>
 
 </html>

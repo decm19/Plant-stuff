@@ -12,52 +12,7 @@
 <body>
 
 
-<header class="navbar">
-
-  <div class="logo">
-    <a href="index.html">
-      <img src="images/logo.svg" alt="FloraDB logo" height="50" />
-    </a>
-  </div>
-  
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-  <nav class="nav-center">
-    
-	<div class="dropdown">
-      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
-      <div class="dropdown-menu">
-        <a href="explorer1.html">Families</a>
-        <a href="explorer2.html">Genera</a>
-        <a href="explorer3.html">Species</a>
-      </div>
-    </div>
-	
-    <a href="identify.html" class="nav-btn">Identify</a>
-    <a href="contribute.html" class="nav-btn">Contribution</a>
-	<a href="contributor.html" class="nav-btn">Contributor</a>
-    <a href="enquiry.html" class="nav-btn">Enquiry</a>
-  </nav>
-
-  <div class="nav-right">
-    <div class="dropdown">
-      <button type="button" class="profile-btn">
-  <img src="images/profilelogo.svg" alt="profilelogo" />
-  </button>
-      <div class="dropdown-menu dropdown-menu-right">
-			<a href="register.html">Register</a>
-			<a href="login.html">Login</a>
-      </div>
-    </div>
-  </div>
-
-</header>
-
+<?php include "header.php" ?>
 <div class="layout">
  <main>
 
@@ -93,8 +48,8 @@
             of familiar fruit crops, which makes them valuable for future breeding.
           </p>
 		  <div class="family-buttons">
-            <a href="explorer2.html#sapindaceae" class="family-btn">Genera</a>
-            <a href="explorer3.html#sapindaceae" class="family-btn">Species</a>
+            <a href="explorer2.php#sapindaceae" class="family-btn">Genera</a>
+            <a href="explorer3.php#sapindaceae" class="family-btn">Species</a>
           </div>
         </div>
         <figure>
@@ -114,8 +69,8 @@
             species are protected by law.
           </p>
 		  <div class="family-buttons">
-            <a href="explorer2.html#orchidaceae" class="family-btn">Genera</a>
-            <a href="explorer3.html#orchidaceae" class="family-btn">Species</a>
+            <a href="explorer2.php#orchidaceae" class="family-btn">Genera</a>
+            <a href="explorer3.php#orchidaceae" class="family-btn">Species</a>
           </div>
         </div>
         <figure>
@@ -134,8 +89,8 @@
             communities for weaving baskets, mats and furniture.
           </p>
 		  <div class="family-buttons">
-            <a href="explorer2.html#arecaceae" class="family-btn">Genera</a>
-            <a href="explorer3.html#arecaceae" class="family-btn">Species</a>
+            <a href="explorer2.php#arecaceae" class="family-btn">Genera</a>
+            <a href="explorer3.php#arecaceae" class="family-btn">Species</a>
           </div>
         </div>
         <figure>
@@ -154,8 +109,8 @@
             so they support many other animals in the rainforest.
           </p>
 		  <div class="family-buttons">
-            <a href="explorer2.html#moraceae" class="family-btn">Genera</a>
-            <a href="explorer3.html#moraceae" class="family-btn">Species</a>
+            <a href="explorer2.php#moraceae" class="family-btn">Genera</a>
+            <a href="explorer3.php#moraceae" class="family-btn">Species</a>
           </div>
         </div>
         <figure>
@@ -204,21 +159,13 @@
     <nav class="aside-nav">
       <a href="#" class="aside-btn">Identify</a>
       <a href="#" class="aside-btn">Contributor</a>
-      <a href="explorer1.html" class="aside-btn">Families</a>
-      <a href="explorer2.html" class="aside-btn">Genera</a>
-      <a href="explorer3.html" class="aside-btn">Species</a>
+      <a href="explorer1.php" class="aside-btn">Families</a>
+      <a href="explorer2.php" class="aside-btn">Genera</a>
+      <a href="explorer3.php" class="aside-btn">Species</a>
     </nav>
   </aside>
  </div>
  
-<footer>
-  <nav class="footer-links">
-    <a href="acknowledgment.html">Acknowledgment</a>
-    <a href="enhancement.html">Enhancement</a>
-    <a href="profile.html">Profile</a>
-	<a href="https://youtu.be/04BvxP1pU00">Video</a>
-  </nav>
-  <p>&copy; 2026 FloraDB</p>
-</footer>
+<?php include "footer.php" ?>
 </body>
 </html>

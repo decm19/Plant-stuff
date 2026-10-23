@@ -12,52 +12,7 @@
 </head>
 <body>
 
-<header class="navbar">
-
-  <div class="logo">
-    <a href="index.html">
-      <img src="images/logo.svg" alt="FloraDB logo" height="50" />
-    </a>
-  </div>
-  
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-  <nav class="nav-center">
-    
-	<div class="dropdown">
-      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
-      <div class="dropdown-menu">
-        <a href="explorer1.html">Families</a>
-        <a href="explorer2.html">Genera</a>
-        <a href="explorer3.html">Species</a>
-      </div>
-    </div>
-	
-    <a href="identify.html" class="nav-btn">Identify</a>
-    <a href="contribute.html" class="nav-btn">Contribution</a>
-	<a href="contributor.html" class="nav-btn">Contributor</a>
-    <a href="enquiry.html" class="nav-btn">Enquiry</a>
-  </nav>
-
-  <div class="nav-right">
-    <div class="dropdown">
-      <button type="button" class="profile-btn">
-  <img src="images/profilelogo.svg" alt="profilelogo" />
-  </button>
-      <div class="dropdown-menu dropdown-menu-right">
-			<a href="register.html">Register</a>
-			<a href="login.html">Login</a>
-      </div>
-    </div>
-  </div>
-
-</header>
-
+<?php include "header.php" ?>
 <div class="layout">
  <main>
 
@@ -94,8 +49,8 @@
 		  The trees are generally fairly small and crooked, and are found as middle-storey trees 
 		  in lowland evergreen rainforest on hills and ridges.</p>
           <div class="family-buttons">
-            <a href="explorer1.html#sapindaceae" class="family-btn">Family</a>
-            <a href="explorer3.html#nephelium" class="family-btn">Species</a>
+            <a href="explorer1.php#sapindaceae" class="family-btn">Family</a>
+            <a href="explorer3.php#nephelium" class="family-btn">Species</a>
           </div>
 		</article>
         
@@ -111,8 +66,8 @@
 		  and its leaves are pinnately compound and spirally arranged. A few species are used as ornamentals, 
 		  some have medicinal value, and the fruits of some are eaten. </p>
           <div class="family-buttons">
-            <a href="explorer1.html#sapindaceae" class="family-btn">Family</a>
-            <a href="explorer3.html#lepisanthes" class="family-btn">Species</a>
+            <a href="explorer1.php#sapindaceae" class="family-btn">Family</a>
+            <a href="explorer3.php#lepisanthes" class="family-btn">Species</a>
           </div>
 		</article>
       </div>
@@ -134,8 +89,8 @@
 		  Nearly all the Bornean species are naturally rare, and some are threatened with extinction unless their 
 		  habitats are better protected.</p>
 		  <div class="family-buttons">
-            <a href="explorer1.html#orchidaceae" class="family-btn">Family</a>
-            <a href="explorer3.html#paphiopedilum" class="family-btn">Species</a>
+            <a href="explorer1.php#orchidaceae" class="family-btn">Family</a>
+            <a href="explorer3.php#paphiopedilum" class="family-btn">Species</a>
           </div>
         </article>
         
@@ -151,8 +106,8 @@
 		  in hybridisation and is now one of the most common windowsill plants in the world. Most species are now very 
 		  rare in the wild because of collecting and habitat destruction.</p>
           <div class="family-buttons">
-            <a href="explorer1.html#orchidaceae" class="family-btn">Family</a>
-            <a href="explorer3.html#phalaenopsis" class="family-btn">Species</a>
+            <a href="explorer1.php#orchidaceae" class="family-btn">Family</a>
+            <a href="explorer3.php#phalaenopsis" class="family-btn">Species</a>
           </div>
 		</article>
       </div>
@@ -174,8 +129,8 @@
 		  into wedge-shaped segments; the fruits are small, orange or red, and one-seeded. Most species are 
 		  sensitive to disturbance, which makes them good indicators of human impact on the forest.</p>
            <div class="family-buttons">
-            <a href="explorer1.html#arecaceae" class="family-btn">Family</a>
-            <a href="explorer3.html#licuala" class="family-btn">Species</a>
+            <a href="explorer1.php#arecaceae" class="family-btn">Family</a>
+            <a href="explorer3.php#licuala" class="family-btn">Species</a>
           </div>
 		</article>
         
@@ -192,8 +147,8 @@
 		  is used for everything from bridges and baskets to fish traps and furniture. Most of the best commercial 
 		  rattans belong to this genus. Heavy trade has led to substantial over-exploitation of wild rattan.</p>
            <div class="family-buttons">
-            <a href="explorer1.html#arecaceae" class="family-btn">Family</a>
-            <a href="explorer3.html#calamus" class="family-btn">Species</a>
+            <a href="explorer1.php#arecaceae" class="family-btn">Family</a>
+            <a href="explorer3.php#calamus" class="family-btn">Species</a>
           </div>
 		</article>
       </div>
@@ -214,8 +169,8 @@
 		  the enlargement of the entire female flower head.Most species yield fairly good timber, and about a dozen are used in 
 		  traditional medicine in Southeast Asia; the latex is mixed with wax for batik work.</p>
           <div class="family-buttons">
-            <a href="explorer1.html#moraceae" class="family-btn">Family</a>
-            <a href="explorer3.html#artocarpus" class="family-btn">Species</a>
+            <a href="explorer1.php#moraceae" class="family-btn">Family</a>
+            <a href="explorer3.php#artocarpus" class="family-btn">Species</a>
           </div>
 		</article>
         
@@ -230,8 +185,8 @@
 		  by a unique inflorescence called a syconium, an urn-shaped structure that encloses numerous tiny flowers.
 		  Figs are keystone species in many tropical forest ecosystems, and over 1,200 vertebrate species are reported to feed on them.</p>
         <div class="family-buttons">
-            <a href="explorer1.html#moraceae" class="family-btn">Family</a>
-            <a href="explorer3.html#ficus" class="family-btn">Species</a>
+            <a href="explorer1.php#moraceae" class="family-btn">Family</a>
+            <a href="explorer3.php#ficus" class="family-btn">Species</a>
           </div>
 		</article>
       </div>
@@ -275,22 +230,14 @@
     <nav class="aside-nav">
       <a href="#" class="aside-btn">Identify</a>
       <a href="#" class="aside-btn">Contributor</a>
-      <a href="explorer1.html" class="aside-btn">Families</a>
-      <a href="explorer2.html" class="aside-btn">Genera</a>
-      <a href="explorer3.html" class="aside-btn">Species</a>
+      <a href="explorer1.php" class="aside-btn">Families</a>
+      <a href="explorer2.php" class="aside-btn">Genera</a>
+      <a href="explorer3.php" class="aside-btn">Species</a>
     </nav>
   </aside>
  </div>
  
-<footer>
-  <nav class="footer-links">
-    <a href="acknowledgment.html">Acknowledgment</a>
-    <a href="enhancement.html">Enhancement</a>
-    <a href="profile.html">Profile</a>
-	<a href="https://youtu.be/04BvxP1pU00">Video</a>
-  </nav>
-  <p>&copy; 2026 FloraDB</p>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 </html>

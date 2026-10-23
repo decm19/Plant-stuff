@@ -11,51 +11,7 @@
 </head>
 <body>
 
-<header class="navbar">
-
-  <div class="logo">
-    <a href="index.html">
-      <img src="images/logo.svg" alt="FloraDB logo" height="50" />
-    </a>
-  </div>
-  
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" >
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-  <nav class="nav-center">
-    
-	<div class="dropdown">
-      <a href="explorer.html" class="nav-btn">Explorer&#9662;</a>
-      <div class="dropdown-menu">
-        <a href="explorer1.html">Families</a>
-        <a href="explorer2.html">Genera</a>
-        <a href="explorer3.html">Species</a>
-      </div>
-    </div>
-	
-    <a href="identify.html" class="nav-btn">Identify</a>
-    <a href="contribute.html" class="nav-btn">Contribution</a>
-	<a href="contributor.html" class="nav-btn">Contributor</a>
-    <a href="enquiry.html" class="nav-btn">Enquiry</a>
-  </nav>
-
-  <div class="nav-right">
-    <div class="dropdown">
-      <button type="button" class="profile-btn">
-  <img src="images/profilelogo.svg" alt="profilelogo" />
-  </button>
-      <div class="dropdown-menu dropdown-menu-right">
-			<a href="register.html">Register</a>
-			<a href="login.html">Login</a>
-      </div>
-    </div>
-  </div>
-
-</header>
+<?php include "header.php" ?>
 
 <div class="layout">
   <main>
@@ -155,11 +111,11 @@
 	<section>
       <h2>The Three Categories</h2>
       <dl>
-        <dt><a href="explorer1.html">Families</a></dt>
+        <dt><a href="explorer1.php">Families</a></dt>
         <dd>The broadest group. Plants in the same family share basic features of their flowers, fruits and growth form.</dd>
-        <dt><a href="explorer2.html">Genera</a></dt>
+        <dt><a href="explorer2.php">Genera</a></dt>
         <dd>A smaller group inside a family. Plants in one genus are close relatives and look alike in many ways.</dd>
-        <dt><a href="explorer3.html">Species</a></dt>
+        <dt><a href="explorer3.php">Species</a></dt>
         <dd>The most specific level. A species is a single, distinct kind of plant with its own scientific name.</dd>
       </dl>
     </section>
@@ -176,24 +132,16 @@
 
     <h2>Quick Links</h2>
     <nav class="aside-nav">
-      <a href="identify.html" class="aside-btn">Identify</a>
-      <a href="contributor.html" class="aside-btn">Contributor</a>
-      <a href="explorer1.html" class="aside-btn">Families</a>
-      <a href="explorer2.html" class="aside-btn">Genera</a>
-      <a href="explorer3.html" class="aside-btn">Species</a>
+      <a href="identify.php" class="aside-btn">Identify</a>
+      <a href="contributor.php" class="aside-btn">Contributor</a>
+      <a href="explorer1.php" class="aside-btn">Families</a>
+      <a href="explorer2.php" class="aside-btn">Genera</a>
+      <a href="explorer3.php" class="aside-btn">Species</a>
     </nav>
   </aside>
 </div>
 
-<footer>
-  <nav class="footer-links">
-    <a href="acknowledgment.html">Acknowledgment</a>
-    <a href="enhancement.html">Enhancement</a>
-    <a href="profile.html">Profile</a>
-	<a href="https://youtu.be/04BvxP1pU00">Video</a>
-  </nav>
-  <p>&copy; 2026 FloraDB</p>
-</footer>
+<?php include "footer.php" ?>
 
 </body>
 </html>
