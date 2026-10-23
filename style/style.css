@@ -163,6 +163,9 @@ aside {
     padding: 1rem;
     border-radius: 6px;
     font-size: 0.95rem;
+    position: sticky;
+    top: 130px;
+    z-index: 10;
 }
 
 main section {
