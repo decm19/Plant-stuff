@@ -15,7 +15,7 @@
 
 <main class="form-main">
 <section>
-<form id="detail" method="post" action="mailto:106758389@students.swinburne.edu.my" >
+<form id="detail" method="post" action="register_process.php" >
 
 
 <h1>Register Form</h1>
@@ -29,7 +29,13 @@
 	<input type="text" id="lname"  name="lname" placeholder="Your last name" required="required" maxlength="25" size="30" pattern="[A-Za-z]+" /><br/> 
 	
 	<label for="email">Email:</label>
-	<input type="email" name="contact"  placeholder="name@domain.com" required = "required" size="30"/> 
+	<input type="email" name="email"  placeholder="name@domain.com" required = "required" size="30"/><br/> 
+	
+	<label for ="username">Username:</label>
+	<input type="text" id="username"  name="username" placeholder="Your Username" required="required" maxlength="25" size="30" pattern="[A-Za-z]+" /><br/> 
+	
+	<label for ="password">Password:</label>
+	<input type="password" id="password"  name="password" placeholder="Your Password" required="required" minlength="8" size="30"  /><br/> 
 	
 
 </div>
@@ -39,7 +45,7 @@
     <legend>Address</legend>
         
 		<label for ="street">Street Address:</label>
-		<input type="text" id="street"  name="street address" required="required" maxlength="40" size="40" /><br/> 
+		<input type="text" id="street"  name="address" required="required" maxlength="40" size="40" /><br/> 
         
 		<label for ="cityname">City/Town:</label>
 		<input type="text" id="cityname"  name="cityname" placeholder="e.g. Kuching" required="required" maxlength="20" size="30" /><br/> 
