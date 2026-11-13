@@ -12,7 +12,7 @@
   <main class="form-main">
   <section>
     <h1>Contribution Form</h1>
-    <form id="contribute" method="post" action="mailto:abc@gmail.com">
+    <form id="contribute" method="post" action="contribute_process.php">
       <p>
         <label for="contributor_name">Contributor name:</label>
         <input type="text" id="contributor_name" name="contributor_name" required maxlength="25" pattern="[a-zA-Z ]+">
