@@ -13,6 +13,7 @@
 
 <body class="flex flex-col">
 	<?php include "header.php" ?>
+	<?php include "db/init.php" ?>
 	<main class="flex-grow">
 		<div class="background-black style-background-image index-html-background-image">
 			<div class="p-5 backdrop-filter-brightness-60">
