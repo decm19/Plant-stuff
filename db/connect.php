@@ -1,6 +1,8 @@
 <?php
 
-if ($init_db == NULL) {
+$dbname = NULL;
+
+if (!isset($init_db)) {
 	$dbname = "floradb";
 }
 

@@ -6,9 +6,7 @@ $connection = include "connect.php";
 
 // Create database
 $sql = "CREATE DATABASE IF NOT EXISTS floradb";
-if (mysqli_query($connection, $sql)) {
-    echo "Database created successfully";
-} else {
+if (!mysqli_query($connection, $sql)) {
     die("Error creating database: " . mysqli_error($connection));
 }
 
@@ -32,18 +30,16 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
 	address_postcode INT(5),
 	phone INT(20),
 	reg_date TIMESTAMP,
-	password_salt TODO!(),
-	password_salted_hash TODO!()
+	password_salt VARCHAR(1),
+	password_salted_hash VARCHAR(64)
 	)";
 
-if (mysqli_query($connection, $sql)) {
-    echo "Table users created successfully";
-} else {
+if (!mysqli_query($connection, $sql)) {
     die("Error creating table users: " . mysqli_error($connection));
 }
 
 $sql = "CREATE TABLE IF NOT EXISTS enquiries (
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	firstname VARCHAR(30) NOT NULL,
 	lastname VARCHAR(30),
 	email VARCHAR(50),
@@ -52,9 +48,7 @@ $sql = "CREATE TABLE IF NOT EXISTS enquiries (
 	comments TEXT
 	)";
 
-if (mysqli_query($connection, $sql)) {
-    echo "Table enquiries created successfully";
-} else {
+if (!mysqli_query($connection, $sql)) {
     die("Error creating table enquiries: " . mysqli_error($connection));
 }
 
@@ -66,9 +60,7 @@ $sql = "CREATE TABLE IF NOT EXISTS contributions (
 	comments TEXT
 	)";
 
-if (mysqli_query($connection, $sql)) {
-    echo "Table contributions created successfully";
-} else {
+if (!mysqli_query($connection, $sql)) {
     die("Error creating table contributions: " . mysqli_error($connection));
 }
 
