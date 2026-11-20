@@ -19,17 +19,17 @@ $connection = include "connect.php";
 
 // Create tables
 $sql = "CREATE TABLE IF NOT EXISTS users (
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-	firstname VARCHAR(30) NOT NULL,
-	lastname VARCHAR(30),
-	email VARCHAR(50),
-	username VARCHAR(50),
+	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
+	firstname VARCHAR(25) NOT NULL,
+	lastname VARCHAR(25),
+	email VARCHAR(100) NOT NULL UNIQUE,
+	username VARCHAR(50) NOT NULL UNIQUE,
 	address_street VARCHAR(200),
 	address_city VARCHAR(50),
 	address_state VARCHAR(20),
-	address_postcode INT(5),
-	phone INT(20),
-	reg_date TIMESTAMP,
+	address_postcode VARCHAR(5),
+	phone VARCHAR(20),
+	reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	password_salt VARCHAR(1),
 	password_salted_hash VARCHAR(64)
 	)";
@@ -39,11 +39,11 @@ if (!mysqli_query($connection, $sql)) {
 }
 
 $sql = "CREATE TABLE IF NOT EXISTS enquiries (
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY,
 	firstname VARCHAR(30) NOT NULL,
 	lastname VARCHAR(30),
 	email VARCHAR(50),
-	phone INT(20),
+	phone VARCHAR(20),
 	enquiry VARCHAR(20),
 	comments TEXT
 	)";
@@ -53,7 +53,7 @@ if (!mysqli_query($connection, $sql)) {
 }
 
 $sql = "CREATE TABLE IF NOT EXISTS contributions (
-	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
 	contributor_name VARCHAR(30) NOT NULL,
 	plant_name VARCHAR(50),
 	file_name VARCHAR(50),
