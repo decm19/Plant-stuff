@@ -18,7 +18,7 @@ $init_db = NULL;
 $connection = include "connect.php";
 
 // Create tables
-$sql = "CREATE TABLE IF NOT EXISTS users (
+$sql = "CREATE TABLE IF NOT EXISTS register (
 	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
 	firstname VARCHAR(25) NOT NULL,
 	lastname VARCHAR(25),
@@ -29,9 +29,22 @@ $sql = "CREATE TABLE IF NOT EXISTS users (
 	address_state VARCHAR(20),
 	address_postcode VARCHAR(5),
 	phone VARCHAR(20),
-	reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	password_salt VARCHAR(1),
-	password_salted_hash VARCHAR(64)
+	reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	)";
+
+if (!mysqli_query($connection, $sql)) {
+    die("Error creating table register: " . mysqli_error($connection));
+}
+
+
+$sql = "CREATE TABLE IF NOT EXISTS users (
+	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
+	firstname VARCHAR(25) NOT NULL,
+	lastname VARCHAR(25),
+	email VARCHAR(100) NOT NULL UNIQUE,
+	username VARCHAR(50) NOT NULL UNIQUE,
+	password_hash VARCHAR(60),
+	profile_picture BLOB
 	)";
 
 if (!mysqli_query($connection, $sql)) {
@@ -56,7 +69,7 @@ $sql = "CREATE TABLE IF NOT EXISTS contributions (
 	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
 	contributor_name VARCHAR(30) NOT NULL,
 	plant_name VARCHAR(50),
-	file_name VARCHAR(50),
+	plant_photo BLOB,
 	comments TEXT
 	)";
 
