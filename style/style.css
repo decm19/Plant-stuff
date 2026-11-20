@@ -575,7 +575,8 @@ tbody th {
 
 .form-main input[type="text"],        
 .form-main input[type="email"],       
-.form-main input[type="tel"],         
+.form-main input[type="tel"], 
+.form-main input[type="password"],         
 .form-main select {                   
     display: block;                   
     width: 100%;                      
