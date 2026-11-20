@@ -23,7 +23,7 @@
 		<?php 
 			$connection = include "db/connect.php";
 
-			$sql = "INSERT INTO contributions (contributor_name, plant_name, file_name,	comments) VALUES (\"" . $_POST['contributor_name'] . "\", \"" . $_POST['plant_name'] . "\", \"". $_POST['plant_image'] . "\", \"" . $_POST['comments'] . "\")";
+			$sql = "INSERT INTO contributions (contributor_name, plant_name, plant_photo, comments) VALUES (\"" . $_POST['contributor_name'] . "\", \"" . $_POST['plant_name'] . "\", \"". $_POST['plant_image'] . "\", \"" . $_POST['comments'] . "\")";
 			if (!mysqli_query($connection, $sql)) {
 				die("Error adding contribution. Please report this error and include this error message:" . mysqli_error($connection));
 			}
