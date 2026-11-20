@@ -21,7 +21,7 @@ $connection = include "connect.php";
 $sql = "CREATE TABLE IF NOT EXISTS register (
 	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
 	firstname VARCHAR(25) NOT NULL,
-	lastname VARCHAR(25),
+	lastname VARCHAR(25) NOT NULL,
 	email VARCHAR(100) NOT NULL UNIQUE,
 	username VARCHAR(50) NOT NULL UNIQUE,
 	address_street VARCHAR(200),
@@ -40,7 +40,7 @@ if (!mysqli_query($connection, $sql)) {
 $sql = "CREATE TABLE IF NOT EXISTS users (
 	id INT(6) UNSIGNED AUTO_INCREMENT UNIQUE PRIMARY KEY, 
 	firstname VARCHAR(25) NOT NULL,
-	lastname VARCHAR(25),
+	lastname VARCHAR(25) NOT NULL,
 	email VARCHAR(100) NOT NULL UNIQUE,
 	username VARCHAR(50) NOT NULL UNIQUE,
 	password_hash VARCHAR(60),
